@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="http://www.gstatic.com/localfeed/local_feed.xsd">
+    <language>en</language>
+    <listing>
+        <name>Swachh Public Toilet-1</name>
+        <address>KRS Rd, Metagalli, Mysuru, Karnataka</address>
+        <country>IN</country>
+        <latitude>12.3483829</latitude>
+        <longitude>76.6297466</longitude>
+        <category>gcid:public_bathroom</category>
+        <content>
+            <attributes>
+                <attr name="Hours">Sun 00:00-23:59</attr>
+                <attr name="Hours">Mon 00:00-23:59</attr>
+                <attr name="Hours">Tue 00:00-23:59</attr>
+                <attr name="Hours">Wed 00:00-23:59</attr>
+                <attr name="Hours">Thu 00:00-23:59</attr>
+                <attr name="Hours">Fri 00:00-23:59</attr>
+                <attr name="Hours">Sat 00:00-23:59</attr>
+            </attributes>
+            <image type="photo"
+                   url="https://swachhpublictoilet.s3.ap-south-1.amazonaws.com/mysore/616ed5f7-79e0-4e29-90fd-b8b89b4906c7.jpeg"
+                   width="640" height="480"/>
+        </content>
+    </listing>
+    <listing>
+        <name>Swachh Public Toilet-2</name>
+        <address>Krishnaraja Boulevard Road, K.G Koppal, Chamrajpura, Mysuru, Karnataka</address>
+        <country>IN</country>
+        <latitude>12.3089197</latitude>
+        <longitude>76.6410464</longitude>
+        <category>gcid:public_bathroom</category>
+        <content>
+            <attributes>
+                <attr name="Hours">Sun Closed</attr>
+                <attr name="Hours">Mon 06:00-19:00</attr>
+                <attr name="Hours">Tue 06:00-19:00</attr>
+                <attr name="Hours">Wed Closed</attr>
+                <attr name="Hours">Thu 06:00-19:00</attr>
+                <attr name="Hours">Fri 06:00-19:00</attr>
+                <attr name="Hours">Sat 06:00-19:00</attr>
+            </attributes>
+            <image type="photo"
+                   url="https://swachhpublictoilet.s3.ap-south-1.amazonaws.com/mysore/aefaf30f-8487-4318-b19b-09e4af2e11ff.jpeg"
+                   width="640" height="480"/>
+        </content>
+    </listing>
+    <listing>
+        <name>Swachh Public Toilet</name>
+        <address>KRS Rd, Metagalli, Mysuru, Karnataka</address>
+        <country>IN</country>
+        <latitude>12.3483829</latitude>
+        <longitude>76.6297466</longitude>
+        <category>gcid:public_bathroom</category>
+        <content>
+            <attributes>
+                <attr name="Hours">Sun 00:00-23:59</attr>
+                <attr name="Hours">Mon 00:00-23:59</attr>
+                <attr name="Hours">Tue 00:00-23:59</attr>
+                <attr name="Hours">Wed 00:00-23:59</attr>
+                <attr name="Hours">Thu 00:00-23:59</attr>
+                <attr name="Hours">Fri 00:00-23:59</attr>
+                <attr name="Hours">Sat 00:00-23:59</attr>
+            </attributes>
+            <image type="photo"
+                   url="https://swachhpublictoilet.s3.ap-south-1.amazonaws.com/mysore/616ed5f7-79e0-4e29-90fd-b8b89b4906c7.jpeg"
+                   width="640" height="480"/>
+        </content>
+    </listing>
+    <listing>
+        <name>Swachh Public Toilet</name>
+        <address>Krishnaraja Boulevard Road, K.G Koppal, Chamrajpura, Mysuru, Karnataka</address>
+        <country>IN</country>
+        <latitude>12.3089197</latitude>
+        <longitude>76.6410464</longitude>
+        <category>gcid:public_bathroom</category>
+        <content>
+            <attributes>
+                <attr name="Hours">Sun 06:00-19:00</attr>
+                <attr name="Hours">Mon 06:00-19:00</attr>
+                <attr name="Hours">Tue 06:00-19:00</attr>
+                <attr name="Hours">Wed 06:00-19:00</attr>
+                <attr name="Hours">Thu 06:00-19:00</attr>
+                <attr name="Hours">Fri 06:00-19:00</attr>
+                <attr name="Hours">Sat 06:00-19:00</attr>
+            </attributes>
+            <image type="photo"
+                   url="https://swachhpublictoilet.s3.ap-south-1.amazonaws.com/mysore/aefaf30f-8487-4318-b19b-09e4af2e11ff.jpeg"
+                   width="640" height="480"/>
+        </content>
+    </listing>
+    <listing>
+        <name>Swachh Public Toilet</name>
+        <address>KRS Rd, Vontikoppal, Mysuru, Karnataka</address>
+        <country>IN</country>
+        <latitude>12.3230937</latitude>
+        <longitude>76.6360577</longitude>
+        <category>gcid:public_bathroom</category>
+        <content>
+            <attributes>
+                <attr name="Hours">Sun 07:00-22:00</attr>
+                <attr name="Hours">Mon 07:00-22:00</attr>
+                <attr name="Hours">Tue 07:00-22:00</attr>
+                <attr name="Hours">Wed 07:00-22:00</attr>
+                <attr name="Hours">Thu 07:00-22:00</attr>
+                <attr name="Hours">Fri 07:00-22:00</attr>
+                <attr name="Hours">Sat 07:00-22:00</attr>
+            </attributes>
+            <image type="photo"
+                   url="https://swachhpublictoilet.s3.ap-south-1.amazonaws.com/mysore/e5dc3c2a-e1e4-40b0-bb8d-07fa90b6b5da.jpeg"
+                   width="640" height="480"/>
+        </content>
+    </listing>
+    <listing>
+        <name>Swachh Public Toilet</name>
+        <address>Anikethana Rd, Jayanagar, Kuvempu Nagara, Mysuru, Karnataka</address>
+        <country>IN</country>
+        <latitude>12.2918757</latitude>
+        <longitude>76.6360131</longitude>
+        <category>gcid:public_bathroom</category>
+        <content>
+            <attributes>
+                <attr name="Hours">Sun 00:00-23:59</attr>
+                <attr name="Hours">Mon 00:00-23:59</attr>
+                <attr name="Hours">Tue 00:00-23:59</attr>
+                <attr name="Hours">Wed 00:00-23:59</attr>
+                <attr name="Hours">Thu 00:00-23:59</attr>
+                <attr name="Hours">Fri 00:00-23:59</attr>
+                <attr name="Hours">Sat 00:00-23:59</attr>
+            </attributes>
+        </content>
+    </listing>
+    <listing>
+        <name>Swachh Public Toilet</name>
+        <address>JLB Road, Lakshmipuram, Bettadpura, Mysuru, Karnataka</address>
+        <country>IN</country>
+        <latitude>12.290983</latitude>
+        <longitude>76.6468346</longitude>
+        <category>gcid:public_bathroom</category>
+        <content>
+            <attributes>
+                <attr name="Hours">Sun 00:00-23:59</attr>
+                <attr name="Hours">Mon 00:00-23:59</attr>
+                <attr name="Hours">Tue 00:00-23:59</attr>
+                <attr name="Hours">Wed 00:00-23:59</attr>
+                <attr name="Hours">Thu 00:00-23:59</attr>
+                <attr name="Hours">Fri 00:00-23:59</attr>
+                <attr name="Hours">Sat 00:00-23:59</attr>
+            </attributes>
+            <image type="photo"
+                   url="https://swachhpublictoilet.s3.ap-south-1.amazonaws.com/mysore/932e2aaa-ded9-4db8-be9f-2fe2445b13e1.jpeg"
+                   width="640" height="480"/>
+        </content>
+    </listing>
+</listings>
