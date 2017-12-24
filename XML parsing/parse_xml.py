@@ -29,7 +29,7 @@ class ParseXml:
                                 for attribute in content:
                                     status = 'Closed'
                                     timings_with_day = attribute.text.split(' ')
-                                    timing = {'day': timings_with_day[0], 'status': status}
+                                    timing = {'day': timings_with_day[0], 'status': status, 'from': None, 'to': None}
                                     if timings_with_day[1] != 'Closed':
                                         timing_list = timings_with_day[1].split('-')
                                         timing['status'] = 'Opened'
@@ -61,24 +61,16 @@ class ParseXml:
         if public_toilet_id:
             timings = row['timings']
             for timing in timings:
-                from_time = timing.get('from')
-                to_time = timing.get('to')
-                if from_time is None:
-                    timing['from'] = None
-                if to_time is None:
-                    timing['to'] = None
-
-                ''' Insert into translations table'''
-                translations_query = "INSERT INTO public_toilet_translations(public_toilet_id, locale, title,address, timings) " \
-                                     "VALUES(%s,%s,%s,%s,%s)"
-                translations_args = (public_toilet_id, row['locale'], row['name'], row['address'], str(row['timings']))
-                db_cursor.execute(query=translations_query, args=translations_args)
-
                 ''' Insert into timings table'''
                 timings_query = "INSERT INTO public_toilets_timings(public_toilet_id, locale, day, status, from_time, to_time) " \
                                 "VALUES(%s,%s,%s,%s,%s,%s)"
                 timings_args = (public_toilet_id, row['locale'], timing['day'], timing['status'], timing['from'], timing['to'])
                 db_cursor.execute(query=timings_query, args=timings_args)
+            ''' Insert into translations table'''
+            translations_query = "INSERT INTO public_toilet_translations(public_toilet_id, locale, title,address, timings) " \
+                                 "VALUES(%s,%s,%s,%s,%s)"
+            translations_args = (public_toilet_id, row['locale'], row['name'], row['address'], str(row['timings']))
+            db_cursor.execute(query=translations_query, args=translations_args)
 
         db_connection.commit()
 
@@ -99,7 +91,7 @@ class ParseXml:
         db.close()
 
 
-obj = ParseXml("uploads\sample.xml")
+obj = ParseXml("sample.xml")
 toilets = obj.reader()
 for toilet in toilets:
     print("Toilet ID: "+str(toilet))
