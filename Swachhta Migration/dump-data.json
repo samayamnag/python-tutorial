@@ -1,0 +1,154 @@
+{
+  "channels": [
+    {
+      "title": "Swachhata Citizen Android",
+      "platform": "Swachhata",
+      "app_name": "Swachhata Citizen",
+      "type": "Android",
+      "archived": false
+    },
+    {
+    "title": "Swachhata Citizen IOS",
+    "platform": "Swachhata",
+    "app_name": "Swachhata Citizen",
+    "type": "IOS",
+    "archived": false
+    },
+    {
+      "title": "Swachhata Engineer Android",
+      "platform": "Swachhata",
+      "app_name": "Swachhata Engineer",
+      "type": "Android",
+      "archived": false
+    },
+    {
+      "title": "Swachhata Web",
+      "platform": "Swachhata",
+      "app_name": "Swachhata Web",
+      "type": "Web",
+      "archived": false
+    },
+    {
+      "title": "Swachhata MS Excel",
+      "platform": "Swachhata",
+      "app_name": "Swachhata MS Excel",
+      "type": "Web",
+      "archived": false
+    },
+    {
+      "title": "Swachhata BBMP Sahaaya",
+      "platform": "Swachhata",
+      "app_name": "Swachhata BBMP Sahaaya",
+      "type": "API",
+      "archived": false
+    },
+    {
+      "title": "Swachhata Icmyc Mumbai",
+      "platform": "Swachhata",
+      "app_name": "Swachhata Icmyc Mumbai",
+      "type": "API",
+      "archived": false
+    },
+    {
+      "title": "Swachhata External",
+      "platform": "Swachhata",
+      "app_name": "Swachhata External",
+      "type": "API",
+      "archived": false
+    },
+    {
+      "title": "Swachhata MRC",
+      "platform": "Swachhata",
+      "app_name": "Swachhata MRC",
+      "type": "API",
+      "archived": false
+    },
+    {
+      "title": "ICMYC Citizen Android",
+      "platform": "ICMYC",
+      "app_name": "ICMYC Citizen",
+      "type": "Android",
+      "archived": false
+    },
+    {
+      "title": "ICMYC Citizen IOS",
+      "platform": "ICMYC",
+      "app_name": "ICMYC Citizen",
+      "type": "IOS",
+      "archived": false
+    }, 
+    {
+        "title": "ICMYC Engineer Android",
+        "platform": "ICMYC",
+        "app_name": "ICMYC Engineer",
+        "type": "Android",
+        "archived": false
+    }, 
+    {
+        "title": "ICMYC Engineer IOS",
+        "platform": "ICMYC",
+        "app_name": "ICMYC Engineer",
+        "type": "IOS",
+        "archived": false
+    },
+    {
+      "title": "Public Eye Citizen Android",
+      "platform": "ICMYC",
+      "app_name": "Public Eye",
+      "type": "Android",
+      "archived": false
+    },
+    {
+        "title": "Public Eye Citizen IOS",
+        "platform": "ICMYC",
+        "app_name": "Public Eye",
+        "type": "IOS",
+        "archived": false
+    },
+    {
+      "title": "Civic Eye Citizen Android",
+      "platform": "ICMYC",
+      "app_name": "Civic Eye",
+      "type": "Android",
+      "archived": false
+    },
+    {
+        "title": "Civic Eye Citizen IOS",
+        "platform": "ICMYC",
+        "app_name": "Civic Eye",
+        "type": "IOS",
+        "archived": false
+    },
+    {
+      "title": "Fire Champ Citizen Android",
+      "platform": "ICMYC",
+      "app_name": "Public Eye",
+      "type": "Android",
+      "archived": false
+    },
+    {
+        "title": "Fire Champ Citizen IOS",
+        "platform": "ICMYC",
+        "app_name": "Fire Champ",
+        "type": "IOS",
+        "archived": false
+    },
+    {
+      "title": "ER Android",
+      "platform": "ICMYC",
+      "app_name": "Electoral Representative",
+      "type": "Android",
+      "archived": false
+    },
+    {
+        "title": "ER IOS",
+        "platform": "ICMYC",
+        "app_name": "Electoral Representative",
+        "type": "IOS",
+        "archived": false
+    }
+  ],
+  "roles": [
+    
+  ]
+}
