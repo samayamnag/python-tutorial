@@ -11,7 +11,6 @@ requests = "*"
 pymysql = "*"
 pymongo = "*"
 mongoengine = "*"
-pylint = "*"
 
 
 [dev-packages]

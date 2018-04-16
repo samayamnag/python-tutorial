@@ -14,17 +14,17 @@ from channel import Channel
 from profile import Profile
 import json
 import datetime
+import time, math, random
 
 
 # MySQL Config
-myConfig = {'host': 'localhost',
-            'username': 'root',
-            'password': '',
-            'db': 'swachh_manch_python'}
+#myConfig = {'host': 'localhost', 'username': 'root', 'password': '', 'db': 'swachh_manch'}
+myConfig = {'host': 'localhost', 'username': 'admin', 'password': 'Sbm123!123', 'db': 'swachh_manch'}
 
 # MongoDB connections
-connect('swachh_manch_python', host="localhost", port=27017, username="admin", password="Sbm123!123")
-#connect(db='swachh_manch', host="10.10.10.227", username="db_admin", password="Sbm123")
+#connect('swachh_manch_python', host="localhost", port=27017, username="admin", password="Sbm123!123")
+#connect(db='swachh_manch', host="localhost", username="db_admin", password="Sbm123")
+connect('swachh_manch', host="localhost", port=27017, username="", password="")
 
 
 # Insert User to MongoDB
@@ -35,12 +35,16 @@ def index(user):
 
     if user_count == 0:
         #channels = []
-        coordinates = str(user[11]) + "," + str(user[12])
+        latitude = user[11]
+        longitude = user[12]
+        coordinates = str(user[11]) + "," + str(user[12]) if latitude and longitude else None
+        city_id = None if user[10] == 0 else user[10]
+        full_name = (user[1].lower().title()) if user[1] else 'Citizen'
         profile = Profile(user_id=int(user[0]),
-                    full_name=user[1],
+                    full_name=full_name,
                     sign_up_with="mobile_number",
                     sign_up_ip_address=str(ipaddress.IPv4Address(user[2])),
-                    avatar=str(user[3]),
+                    avatar=user[3],
                     roles=[role.id],
                     channels=[{"id": channel.id, "slug": channel.slug, 
                     "mac_address": user[5], "sign_up": True, "device_token": user[6],
@@ -51,7 +55,7 @@ def index(user):
                     locations=[{"app_name": channel.app_name, 
                             "location": {"name": user[8], "coordinates": coordinates, 
                             "ward_id": user[9],
-                            "city_id": user[10]}}])
+                            "city_id": city_id}}])
         
         profile.save()
 
@@ -63,9 +67,9 @@ def index(user):
 
 
 # Fetch Users from MySQL
-def fetch_users(offset=0, limit=250):
+def fetch_users(offset=203135, limit=70000):
     mycon = mydb.connect(myConfig['host'], myConfig['username'],
-                         myConfig['password'], myConfig['db'])
+                         myConfig['password'], myConfig['db'], charset='utf8mb4')
     with mycon:
 
         cur = mycon.cursor()
@@ -144,6 +148,34 @@ for channel in Channel.objects:
     print(channel.title)
 
 '''
+def uniqid(prefix='', more_entropy=False):
+    """uniqid([prefix=''[, more_entropy=False]]) -> str
+    Gets a prefixed unique identifier based on the current
+    time in microseconds.
+    prefix
+        Can be useful, for instance, if you generate identifiers
+        simultaneously on several hosts that might happen to generate
+        the identifier at the same microsecond.
+        With an empty prefix, the returned string will be 13 characters
+        long. If more_entropy is True, it will be 23 characters.
+    more_entropy
+        If set to True, uniqid() will add additional entropy (using
+        the combined linear congruential generator) at the end of
+        the return value, which increases the likelihood that
+        the result will be unique.
+    Returns the unique identifier, as a string."""
+    m = time.time()
+    sec = math.floor(m)
+    usec = math.floor(1000000 * (m - sec))
+    if more_entropy:
+        lcg = random.random()
+        the_uniqid = "%08x%05x%.8F" % (sec, usec, lcg * 10)
+    else:
+        the_uniqid = '%8x%05x' % (sec, usec)
+
+    the_uniqid = prefix + the_uniqid
+    return the_uniqid
+
 # Main Function
 def main():
     users = fetch_users()

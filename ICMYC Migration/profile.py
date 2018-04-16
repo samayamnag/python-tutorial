@@ -4,7 +4,7 @@ import pymysql
 
 class Profile(Document):
     user_id = IntField(unique=True)
-    full_name = StringField(required=True, max_length=255)
+    full_name = StringField(required=True, max_length=100)
     sign_up_with = StringField(default='email')
     settings = DictField(default={"email_notifications_preferred": True, 
     "sms_notifications_preferred": True, 
@@ -15,8 +15,8 @@ class Profile(Document):
     locations = ListField()
     social_accounts = ListField()
     channels = ListField()
-    avatar = StringField(null=True)
-    roles=ListField(ObjectIdField())
+    avatar = StringField(default=None)
+    roles=ListField()
 
     meta = {'collection': 'profiles'}
 
