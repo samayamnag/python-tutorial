@@ -17,6 +17,7 @@ class Channel(Document):
     archived = BooleanField(default=False)
     created_at = DateTimeField(default=datetime.datetime.now)
     updated_at = DateTimeField()
+    channel_id = IntField()
 
     meta = {
         'collection': 'channels'

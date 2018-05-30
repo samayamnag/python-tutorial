@@ -19,7 +19,8 @@ import time, math, random
 
 # MySQL Config
 #myConfig = {'host': 'localhost', 'username': 'root', 'password': '', 'db': 'swachh_manch'}
-myConfig = {'host': 'localhost', 'username': 'admin', 'password': 'Sbm123!123', 'db': 'swachh_manch'}
+#myConfig = {'host': 'localhost', 'username': 'admin', 'password': '', 'db': 'swachh_manch'}
+#myConfig = {'host': '10.0.0.85', 'username': '', 'password': '', 'db': 'swachh_manch'}
 
 # MongoDB connections
 #connect('swachh_manch_python', host="localhost", port=27017, username="admin", password="Sbm123!123")
@@ -31,13 +32,14 @@ connect('swachh_manch', host="localhost", port=27017, username="", password="")
 def index(user):
     user_count = Profile.objects(user_id=user[0]).count()
     role = Role.objects(name="Citizen").first()
-    channel = Channel.objects(slug=map_channel(user[4])).first()
+    source_id = 1 if user[4] == 0 else user[4]
+    channel = Channel.objects(slug=map_channel(source_id)).first()
 
     if user_count == 0:
         #channels = []
         latitude = user[11]
         longitude = user[12]
-        coordinates = str(user[11]) + "," + str(user[12]) if latitude and longitude else None
+        coordinates = [float(longitude), float(latitude)] if latitude and longitude else None
         city_id = None if user[10] == 0 else user[10]
         full_name = (user[1].lower().title()) if user[1] else 'Citizen'
         profile = Profile(user_id=int(user[0]),
@@ -59,7 +61,10 @@ def index(user):
         
         profile.save()
 
-        print('User: ' + str(user[0]) +' indexed')
+        #role.update(push__profile_ids=str(profile.id))
+
+        #print('User: ' + str(user[0]) + '==' + str(profile.id) + ' indexed')
+        print('User: ' + str(user[0]) + ' indexed')
     else:
         print('User: ' + str(user[0]) + ' already exists')
 
@@ -67,7 +72,7 @@ def index(user):
 
 
 # Fetch Users from MySQL
-def fetch_users(offset=203135, limit=70000):
+def fetch_users(offset=7669373, limit=500000):
     mycon = mydb.connect(myConfig['host'], myConfig['username'],
                          myConfig['password'], myConfig['db'], charset='utf8mb4')
     with mycon:
@@ -76,9 +81,11 @@ def fetch_users(offset=203135, limit=70000):
         cur.execute(f"SELECT users.id, legacy_users.full_name, legacy_users.sign_up_ip, \
                     legacy_users.avatar, legacy_users.source_id, legacy_users.mac_address, \
                     legacy_users.device_token, legacy_users.last_login_at, legacy_users.location, \
-                    legacy_users.ward_id, legacy_users.city_id, legacy_users.latitude, legacy_users.longitude \
-                    FROM sbm_users as legacy_users \
+                    legacy_users.ward_id, legacy_users.city_id, legacy_users.latitude, \
+                    legacy_users.longitude, legacy_users.id as legacy_user_id \
+                    FROM swachh_bharat.sbm_users as legacy_users \
                     JOIN users as users ON legacy_users.id = users.user_id \
+                    ORDER BY users.id ASC \
                     limit {offset}, {limit}")
         users = cur.fetchall()
         return users
@@ -182,5 +189,6 @@ def main():
 
     for user in users:
         index(user)
+        #print(str(user[0]) + '===' + str(user[1]) + '===' + str(user[13]))
 
 main()

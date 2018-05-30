@@ -12,11 +12,11 @@ class Profile(Document):
     sign_up_ip_address = StringField(null=True)
     sign_up_user_agent = StringField(null=True)
     has_at_least_one_social_account = BooleanField(default=False)
-    locations = ListField()
-    social_accounts = ListField()
-    channels = ListField()
+    locations = ListField(DictField())
+    social_accounts = ListField(DictField())
+    channels = ListField(DictField())
     avatar = StringField(null=True)
-    roles=ListField(ObjectIdField())
+    roles = ListField(ObjectIdField())
 
     meta = {'collection': 'profiles'}
 
