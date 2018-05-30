@@ -5,63 +5,72 @@
       "platform": "Swachhata",
       "app_name": "Swachhata Citizen",
       "type": "Android",
-      "archived": false
+      "archived": false,
+      "channel_id": 1
     },
     {
-    "title": "Swachhata Citizen IOS",
-    "platform": "Swachhata",
-    "app_name": "Swachhata Citizen",
-    "type": "IOS",
-    "archived": false
+      "title": "Swachhata Citizen IOS",
+      "platform": "Swachhata",
+      "app_name": "Swachhata Citizen",
+      "type": "IOS",
+      "archived": false,
+      "channel_id": 2
     },
     {
       "title": "Swachhata Engineer Android",
       "platform": "Swachhata",
       "app_name": "Swachhata Engineer",
       "type": "Android",
-      "archived": false
+      "archived": false,
+      "channel_id": 3
     },
     {
       "title": "Swachhata Web",
       "platform": "Swachhata",
       "app_name": "Swachhata Web",
       "type": "Web",
-      "archived": false
+      "archived": false,
+      "channel_id": 4
     },
     {
       "title": "Swachhata MS Excel",
       "platform": "Swachhata",
       "app_name": "Swachhata MS Excel",
       "type": "Web",
-      "archived": false
+      "archived": false,
+      "channel_id": 5
     },
     {
       "title": "Swachhata BBMP Sahaaya",
       "platform": "Swachhata",
       "app_name": "Swachhata BBMP Sahaaya",
       "type": "API",
-      "archived": false
+      "archived": false,
+      "channel_id": 6
     },
     {
       "title": "Swachhata Icmyc Mumbai",
       "platform": "Swachhata",
       "app_name": "Swachhata Icmyc Mumbai",
       "type": "API",
-      "archived": false
+      "archived": false,
+      "channel_id": 7
     },
     {
       "title": "Swachhata External",
       "platform": "Swachhata",
       "app_name": "Swachhata External",
       "type": "API",
-      "archived": false
+      "archived": false,
+      "channel_id": 8
     },
     {
       "title": "Swachhata MRC",
       "platform": "Swachhata",
       "app_name": "Swachhata MRC",
       "type": "API",
-      "archived": false
+      "archived": false,
+      "channel_id": 9
     }
   ],
   "roles": [

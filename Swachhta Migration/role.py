@@ -10,6 +10,7 @@ class Role(Document):
     guard_name = StringField(max_length=50, default="api")
     created_at = DateTimeField(default=datetime.datetime.now)
     updated_at = DateTimeField(null=True)
+    profile_ids = ListField(ObjectIdField())
 
     meta = {
         "collection": 'roles'
@@ -21,25 +22,25 @@ class Role(Document):
     @staticmethod
     def input_roles():
         return [
-            'Super admin',
+            'Super Admin',
             'Admin',
-            'Moderatior',
+            'Moderator',
             'Citizen',
-            'State admin',
-            'District admin',
-            'ULB admin',
-            'Civic agency admin',
-            'Civic agency user',
+            'State Admin',
+            'District Admin',
+            'ULB Admin',
+            'Civic Agency Admin',
+            'Civic Agency User',
             'Engineer',
             'Escalations Engineer',
             'MP',
             'MLA',
             'Corporator',
             'SQS admin',
-            'Nodal officer',
+            'Nodal Officer',
             'MOUH',
-            'Event admin',
-            'Event moderator',
+            'Event Admin',
+            'Event Moderator',
         ]
 
     

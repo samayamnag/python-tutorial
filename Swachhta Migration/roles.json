@@ -1,0 +1,19 @@
+{"_id":{"$oid":"5afab7562e21e821985b1448"},"name":"Super Admin","guard_name":"api","created_at":{"$date":"2018-05-15T16:02:54.888Z"},"updated_at":{"$date":"2018-05-15T16:02:54.888Z"}}
+{"_id":{"$oid":"5afab7572e21e821985b1449"},"name":"Admin","guard_name":"api","created_at":{"$date":"2018-05-15T16:02:55.064Z"},"updated_at":{"$date":"2018-05-15T16:02:55.064Z"}}
+{"_id":{"$oid":"5afab7572e21e821985b144a"},"name":"Moderator","guard_name":"api","created_at":{"$date":"2018-05-15T16:02:55.066Z"},"updated_at":{"$date":"2018-05-15T16:02:55.066Z"}}
+{"_id":{"$oid":"5afab7572e21e821985b144b"},"name":"Citizen","guard_name":"api","created_at":{"$date":"2018-05-15T16:02:55.069Z"},"updated_at":{"$date":"2018-05-15T16:02:55.069Z"}}
+{"_id":{"$oid":"5afab7572e21e821985b144c"},"name":"State Admin","guard_name":"api","created_at":{"$date":"2018-05-15T16:02:55.072Z"},"updated_at":{"$date":"2018-05-15T16:02:55.072Z"}}
+{"_id":{"$oid":"5afab7572e21e821985b144d"},"name":"District Admin","guard_name":"api","created_at":{"$date":"2018-05-15T16:02:55.074Z"},"updated_at":{"$date":"2018-05-15T16:02:55.074Z"}}
+{"_id":{"$oid":"5afab7572e21e821985b144e"},"name":"Ulb Admin","guard_name":"api","created_at":{"$date":"2018-05-15T16:02:55.076Z"},"updated_at":{"$date":"2018-05-15T16:02:55.077Z"}}
+{"_id":{"$oid":"5afab7572e21e821985b144f"},"name":"Civic Agency Admin","guard_name":"api","created_at":{"$date":"2018-05-15T16:02:55.079Z"},"updated_at":{"$date":"2018-05-15T16:02:55.079Z"}}
+{"_id":{"$oid":"5afab7572e21e821985b1450"},"name":"Civic Agency User","guard_name":"api","created_at":{"$date":"2018-05-15T16:02:55.081Z"},"updated_at":{"$date":"2018-05-15T16:02:55.081Z"}}
+{"_id":{"$oid":"5afab7572e21e821985b1451"},"name":"Engineer","guard_name":"api","created_at":{"$date":"2018-05-15T16:02:55.084Z"},"updated_at":{"$date":"2018-05-15T16:02:55.084Z"}}
+{"_id":{"$oid":"5afab7572e21e821985b1452"},"name":"Escalations Engineer","guard_name":"api","created_at":{"$date":"2018-05-15T16:02:55.086Z"},"updated_at":{"$date":"2018-05-15T16:02:55.086Z"}}
+{"_id":{"$oid":"5afab7572e21e821985b1453"},"name":"Mp","guard_name":"api","created_at":{"$date":"2018-05-15T16:02:55.088Z"},"updated_at":{"$date":"2018-05-15T16:02:55.088Z"}}
+{"_id":{"$oid":"5afab7572e21e821985b1454"},"name":"Mla","guard_name":"api","created_at":{"$date":"2018-05-15T16:02:55.090Z"},"updated_at":{"$date":"2018-05-15T16:02:55.091Z"}}
+{"_id":{"$oid":"5afab7572e21e821985b1455"},"name":"Corporator","guard_name":"api","created_at":{"$date":"2018-05-15T16:02:55.093Z"},"updated_at":{"$date":"2018-05-15T16:02:55.093Z"}}
+{"_id":{"$oid":"5afab7572e21e821985b1456"},"name":"Sqs Admin","guard_name":"api","created_at":{"$date":"2018-05-15T16:02:55.095Z"},"updated_at":{"$date":"2018-05-15T16:02:55.095Z"}}
+{"_id":{"$oid":"5afab7572e21e821985b1457"},"name":"Nodal Officer","guard_name":"api","created_at":{"$date":"2018-05-15T16:02:55.097Z"},"updated_at":{"$date":"2018-05-15T16:02:55.098Z"}}
+{"_id":{"$oid":"5afab7572e21e821985b1458"},"name":"Mouh","guard_name":"api","created_at":{"$date":"2018-05-15T16:02:55.100Z"},"updated_at":{"$date":"2018-05-15T16:02:55.100Z"}}
+{"_id":{"$oid":"5afab7572e21e821985b1459"},"name":"Event Admin","guard_name":"api","created_at":{"$date":"2018-05-15T16:02:55.101Z"},"updated_at":{"$date":"2018-05-15T16:02:55.101Z"}}
+{"_id":{"$oid":"5afab7572e21e821985b145a"},"name":"Event Moderator","guard_name":"api","created_at":{"$date":"2018-05-15T16:02:55.102Z"},"updated_at":{"$date":"2018-05-15T16:02:55.103Z"}}
